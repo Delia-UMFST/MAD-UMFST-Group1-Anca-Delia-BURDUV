@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="message">TOAST</string>
+    <string name="counter">COUNT</string>
+</resources>
