@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dice">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/back_red">
+
+        <ImageView
+            android:id="@+id/imageViewDiceRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dice_1"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewRollResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="Result: 1" />
+
+        <Button
+            android:id="@+id/buttonRoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/front_red"
+            android:text="ROLL AGAIN" />
+
+        <Button
+            android:id="@+id/buttonBackDice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/front_red"
+            android:text="BACK" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

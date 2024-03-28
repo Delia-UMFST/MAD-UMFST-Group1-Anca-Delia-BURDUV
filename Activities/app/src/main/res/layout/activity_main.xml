@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/back_red">
+
+                <TextView
+                    android:id="@+id/textDiceTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_marginVertical="10dp"
+                    android:textAlignment="center"
+                    android:text="Activity 1: Roll A Dice" />
+
+                <ImageView
+                    android:id="@+id/imageViewDice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:src="@drawable/dice" />
+
+                <TextView
+                    android:id="@+id/textDiceDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="Start an activity for rolling a six sided die." />
+
+                <Button
+                    android:id="@+id/buttonDice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/front_red"
+                    android:text="DICE" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/back_green">
+
+                <TextView
+                    android:id="@+id/textCalcTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:layout_marginVertical="10dp"
+                    android:text="Activity 2: Calculator" />
+
+                <ImageView
+                    android:id="@+id/imageViewCalc"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/calculator" />
+
+                <TextView
+                    android:id="@+id/textCalcDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="Start an activity for a simple calculator with addition, subtraction, multiplication and division." />
+
+                <Button
+                    android:id="@+id/buttonCalc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/front_green"
+                    android:text="CALCULATOR" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/back_blue">
+
+                <TextView
+                    android:id="@+id/textStoryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:layout_marginVertical="10dp"
+                    android:text="Activity 3: Read A Story" />
+
+                <ImageView
+                    android:id="@+id/imageViewStory"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/open_book" />
+
+                <TextView
+                    android:id="@+id/textStoryDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="Start an activity for reading a short story." />
+
+                <Button
+                    android:id="@+id/buttonStory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/front_blue"
+                    android:text="STORY" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
